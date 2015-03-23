@@ -4,6 +4,8 @@
 
 Made with my mentor at [Bloc](http://bloc.io)
 
+##[brianstone-bloccit](https://brianstone-bloccit.herokuapp.com/) is now up on Heroku!
+
 
 
 
