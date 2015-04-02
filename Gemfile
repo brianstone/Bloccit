@@ -11,7 +11,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-
+#Figaro is a solution for handling sensitive data
+gem 'figaro', '1.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Faker generates fake data to help during development
