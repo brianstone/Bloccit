@@ -1,12 +1,20 @@
 Rails.application.routes.draw do
 
+  get 'summaries/show'
+
+  get 'summaries/new'
+
   devise_for :users
 
   resources :advertisements
   
   resources :topics do
-    resources :posts, except: [:index]
+    resources :posts, except: [:index] do
+      resources :summaries, only: [:show, :new, :create]
+    end
   end
+
+
 
   get 'welcome/contact'
 
