@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'summaries/new'
 
   devise_for :users
+  resources :users, only: [:update]
 
   resources :advertisements
   
