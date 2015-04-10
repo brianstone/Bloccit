@@ -29,6 +29,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass'
 #Pundit offers authorization through classes
 gem 'pundit'
+#Redcarpet is a Ruby library for Markdown processing that smells like butterlies and popcorn.
+gem 'redcarpet'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
