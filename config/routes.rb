@@ -1,9 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'summaries/show'
-
-  get 'summaries/new'
-
   devise_for :users
   resources :users, only: [:update]
 
