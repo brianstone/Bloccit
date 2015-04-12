@@ -31,6 +31,12 @@ gem 'bootstrap-sass'
 gem 'pundit'
 #Redcarpet is a Ruby library for Markdown processing that smells like butterlies and popcorn.
 gem 'redcarpet'
+#Carrierwave provides a simple and extremely flexible way to upload files from Ruby applications.
+gem 'carrierwave'
+#Minimagick is a ruby wrapper for ImageMagick
+gem 'mini_magick'
+#Fog allows for an easier means of uploading to Amazon's S3.
+gem 'fog'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
