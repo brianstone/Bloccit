@@ -37,6 +37,8 @@ gem 'carrierwave'
 gem 'mini_magick'
 #Fog allows for an easier means of uploading to Amazon's S3.
 gem 'fog'
+# will_paginate allows for easy implementation of pagination.
+gem 'will_paginate', '~> 3.0.5'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
