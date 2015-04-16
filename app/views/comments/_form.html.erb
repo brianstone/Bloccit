@@ -1,0 +1,10 @@
+<%= form_for [topic, post, post.comments.new] do |f| %>
+  <div class="row">
+    <div class="col-md-8">
+      <%= f.label :body %>
+      <%= f.text_field :body, class: 'form-control', placeholder: 'Enter Comment' %>
+    </div>
+    <div class="col-md-4">
+      <%= f.submit "Save", class: "btn btn-success" %>
+      <% end %>
+    </div>
