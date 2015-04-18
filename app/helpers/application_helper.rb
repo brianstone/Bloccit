@@ -14,9 +14,4 @@ module ApplicationHelper
     (redcarpet.render markdown).html_safe
   end
 
-  def will_paginate(collection)
-    page_count = collection.unscoped.count / 10
-    
-  end
-
 end

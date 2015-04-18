@@ -1,4 +1,5 @@
 class Topic < ActiveRecord::Base
-  extend Paginate
   has_many :posts
+
+  self.per_page = 50
 end

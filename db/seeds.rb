@@ -13,7 +13,7 @@ end
 users = User.all
 
 #Create Topics
-15.times do
+100.times do
   Topic.create!(
     name: Faker::Lorem.sentence,
     description: Faker::Lorem.paragraph
@@ -22,7 +22,7 @@ end
 topics = Topic.all
 
 # Create Posts
-50.times do 
+10000.times do 
   Post.create!(
     user: users.sample,
     topic: topics.sample,
@@ -79,5 +79,6 @@ member.save!
 puts "Seed finished"
 puts "#{Advertisement.count} advertisements created"
 puts "#{User.count} users created"
+puts "#{Topic.count} topics created"
 puts "#{Post.count} posts created"
 puts "#{Comment.count} comments created"

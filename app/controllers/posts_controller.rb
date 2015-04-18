@@ -1,5 +1,4 @@
 class PostsController < ApplicationController
-  include Paginate
 
   def show
     @topic = Topic.find(params[:topic_id])
