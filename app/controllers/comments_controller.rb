@@ -8,7 +8,7 @@ class CommentsController < ApplicationController
     else
       flash[:error] = "There was an error saving comment. Please try again."
     end
-    redirect_to @post.topic
+    redirect_to [@post.topic, @post]
   end
 
   def destroy
@@ -20,7 +20,7 @@ class CommentsController < ApplicationController
     else
       flash[:error] = "Error deleting comment. Please try again."
     end
-    redirect_to @post.topic
+    redirect_to [@post.topic, @post]
   end
 
 
