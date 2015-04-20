@@ -53,7 +53,10 @@ group :production do
   gem 'rails_12factor'
 end
 
-group :development do
+group :development, :test do
+  # Rspec will allow for testing our code
+  gem 'rspec-rails', '~> 3.0'
+  
   gem 'sqlite3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
