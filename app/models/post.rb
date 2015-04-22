@@ -5,13 +5,9 @@ class Post < ActiveRecord::Base
   belongs_to :topic
   has_one :summary
 
-<<<<<<< HEAD
   default_scope { order('rank DESC') }
-=======
+  
   mount_uploader :image, ImageUploader
-
-  default_scope { order('created_at DESC') }
->>>>>>> uploading-images-assignment
 
   validates :title, length: {minimum: 5 }, presence: true
   validates :body, length: {minimum: 20 }, presence: true
