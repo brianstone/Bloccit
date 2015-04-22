@@ -29,7 +29,11 @@ topics = Topic.all
     title: Faker::Lorem.sentence,
     body: Faker::Lorem.paragraph
     )
-  10.times do 
+
+  post.update_attributes!(created_at: rand(10.minutes .. 1.year).ago)
+  post.update_rank
+
+10.times do 
     Comment.create!(
       post: post,
       user: users.sample,
