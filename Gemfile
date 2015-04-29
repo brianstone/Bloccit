@@ -56,8 +56,12 @@ end
 group :development, :test do
   # Rspec will allow for testing our code
   gem 'rspec-rails', '~> 3.0'
-  
+
+  # Capybara helps you test web applications by simulating how a real user would interact with your app. 
+  gem 'capybara'
+
   gem 'sqlite3'
+
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
