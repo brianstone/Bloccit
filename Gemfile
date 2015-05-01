@@ -39,6 +39,8 @@ gem 'mini_magick'
 gem 'fog'
 # will_paginate allows for easy implementation of pagination.
 gem 'will_paginate', '~> 3.0.5'
+# New Relic offers great tools for application monitoring
+gem 'newrelic_rpm'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -51,9 +53,6 @@ gem 'will_paginate', '~> 3.0.5'
 group :production do
   gem 'pg'
   gem 'rails_12factor'
-
-  # New Relic has a variety of tools for application monitoring
-  gem 'newrelic_rpm'
 end
 
 group :development, :test do
