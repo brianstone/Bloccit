@@ -42,6 +42,8 @@ gem 'will_paginate', '~> 3.0.5'
 # New Relic offers great tools for application monitoring
 gem 'newrelic_rpm'
 
+gem 'puma'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -75,5 +77,6 @@ group :development, :test do
 
   # Pry offers extra features not available in the standard IRB shell
   gem 'pry-rails'
+
 end
 
