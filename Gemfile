@@ -78,5 +78,7 @@ group :development, :test do
   # Pry offers extra features not available in the standard IRB shell
   gem 'pry-rails'
 
+  gem 'factory_girl_rails', '~> 4.0'
+
 end
 
