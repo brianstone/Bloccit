@@ -20,9 +20,12 @@ class CommentsController < ApplicationController
     else
       flash[:error] = "Error deleting comment. Please try again."
     end
-    redirect_to [@post.topic, @post]
   end
 
+  respond_to do |format|
+    format.html
+    format.js
+  end
 
 
   private
