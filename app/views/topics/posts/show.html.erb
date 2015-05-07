@@ -28,11 +28,14 @@
     <%= render partial: 'favorites/favorite', locals: { post: @post } %>
   </div>
   <div class="col-md-8">
-    <%= render partial: 'comments/comment', collection: @comments %>
+    <h2>Comments</h2>
+    <div class='new-comment'>
+      <% if policy(Comment.new).create? %>
+        <%= render partial: 'comments/form', locals: { topic: @topic, post: @post, comment: @post.comments.build } %>
+      <% end %>
+    </div>
+    <div class='js-comments'>
+      <%= render partial: 'comments/comment', collection: @comments %>
+    </div>
   </div>
-
-  <% if policy(Comment.new).create? %>
-    <%= render partial: 'comments/form', locals: { topic: @topic, post: @post } %>
-  <% end %>
-
 </div>
